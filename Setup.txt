@@ -1,0 +1,28 @@
+To run project I did not change anything.
+
+npm install
+
+node seeder/user-seeder.js
+
+npm run start
+
+
+1) We can set Manager to Employee 
+   we can set manager to any employees, in user table I add new field manager where I am passing user_id
+
+2) Leave View should be Calender:
+   if you go http://localhost:3000/admin/leave-applications 
+   then choose a user you can see Calender with a leave, I did not delete old part of the view too.
+
+3) HR should have a ablibity to mark attandence for any employee:
+   HR(admin) user has a ability to mark any employees attandence on the current day 
+
+4) monthly , employee wise, list showing: 
+    if you stand on the home page you will see montly overview page from admin view only
+    http://localhost:3000/admin/monthly-overview/
+    and you can see employee list but it calculates total time not monthly :S
+5)  caluculate Salary based on Total working Days:
+    I am calculating total salary, I added new field in user table hourly salary and depends 
+    working days, multipling it to 8 and then calculating
+
+6) sorry I did not have a time to work on pdf part and refactoring :S
